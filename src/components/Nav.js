@@ -21,7 +21,7 @@ const Nav = ({
       className={`absolute h-screen w-full flex justify-between right-0  overflow-hidden`}
     >
       <nav
-        className={`pt-60 pl-20 absolute w-full h-screen bg-nav-bg transition-all duration-[0.5s] ease-in-out pr-[59px] bg-nav  ${
+        className={`md:pt-60 extrasmall:pt-32 pt-20  pl-20 absolute w-full h-screen bg-nav-bg transition-all duration-[0.5s] ease-in-out pr-[59px] bg-nav  ${
           isSideBar ? "translate-x-0" : "translate-x-[-100%]"
         }`}
       >
@@ -30,7 +30,7 @@ const Nav = ({
             <NavLink
               key={item.nav}
               to={item.url}
-              className="text-white font-semibold tracking-[1.5%] leading-[92pz] text-[64px] z-50 "
+              className="text-white font-semibold tracking-[1.5%] leading-[78px] md:leading-[92px] text-[42px]  md:text-[64px] z-50 "
               onClick={() => {
                 if (item.url === "#campaignideas") {
                   scrollToRef(campaignIdeasRef);

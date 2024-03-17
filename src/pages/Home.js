@@ -57,7 +57,7 @@ const Home = ({
           <figure>
             <img src={Logo} alt="Activatar" />
           </figure>
-          <div className="pt-5 flex justify-between items-center pb-9 px-14">
+          <div className="pt-5 flex flex-col lg:flex-row justify-between items-center pb-9 px-14">
             <figure className="basis-[50%]">
               <img src={HeroImage} />
             </figure>
@@ -65,7 +65,7 @@ const Home = ({
               <img src={HeroImageLeft} alt="hero" />
             </figure>
           </div>
-          <p className="text-center relative z-[3] backdrop italic font-semibold text-[#4A0292} leading-[72px] text-[50px] tracking-[6%] pb-[110px] after:content-[''] after:w-[494px] after:h-[79px] after:left-[60%] after:-translate-x-1/2 after:absolute after:-z-10 ">
+          <p className="text-center relative z-[3] backdrop italic font-semibold text-[#4A0292} leading-[52px] lg:leading-[72px] text-[36px] lg:text-[50px] tracking-[6%] pb-[110px] after:content-[''] after:w-[494px] after:h-[79px] after:left-[60%] after:-translate-x-1/2 after:absolute after:-z-10 ">
             {" "}
             Unleash Your Brand's Power!
             <figure className="absolute bottom-[-25px] left-[48.5%] -translate-x-1/2">
