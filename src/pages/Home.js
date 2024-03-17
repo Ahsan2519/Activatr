@@ -50,20 +50,6 @@ const Home = () => {
             <figure className="basis-[50%]">
               <img src={HeroImage} />
             </figure>
-            {/* <div>
-            <figure className="pl-9">
-              <img src={MakeYour} alt="Hero" />
-            </figure>
-            <figure className="pl-16 relative ">
-              <img src={Brand} alt="Hero" />
-              <figure className="absolute -top-[90px] right-[-169px]">
-                <img src={Sound} alt="Hero" />
-              </figure>
-            </figure>
-            <figure className="pl-24">
-              <img src={Standout} alt="Hero" />
-            </figure>
-          </div> */}
             <figure className="relative basis-[50%]">
               <img src={HeroImageLeft} alt="hero" />
             </figure>

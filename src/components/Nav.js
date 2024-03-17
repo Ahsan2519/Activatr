@@ -1,7 +1,6 @@
 import React from "react";
 import { NavData } from "../data/NavData";
 import { NavLink } from "react-router-dom";
-import Hamburger from "../assest/images/Hamburger.svg";
 import Close from "../assest/images/Close.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { setSideBar } from "../redux/actions/CampaignActions";
@@ -33,7 +32,6 @@ const Nav = () => {
           className={`absolute cursor-pointer right-0 translate-x-0 w-[59px] top-0 h-screen  border-l-2 ${
             isSideBar ? "border-white" : "border-nav"
           }  `}
-          // onClick={() => setIsSideBar((prev) => !prev)}
           onClick={() => dispatch(setSideBar())}
         >
           <img
@@ -43,20 +41,6 @@ const Nav = () => {
           />
         </div>
       </nav>
-      {/* <div
-        className={`absolute cursor-pointer ${
-          isSideBar ? "-right-full" : "right-0"
-        } transition-all duration-[0.5s] ease-in-out w-[59px] z-10 h-screen  border-l-2 ${
-          isSideBar ? "border-white" : "border-nav"
-        }  `}
-        onClick={() => setIsSideBar((prev) => !prev)}
-      >
-        <img
-          src={Hamburger}
-          alt="Hamberger open"
-          className="absolute w-[65%] left-1/2 -translate-x-1/2 h-screen"
-        />
-      </div> */}
     </header>
   );
 };
