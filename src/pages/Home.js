@@ -17,17 +17,34 @@ import Layout from "../components/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { setSideBar } from "../redux/actions/CampaignActions";
 
-const Home = () => {
+const Home = ({
+  campaignIdeasRef,
+  metricMeasuresRef,
+  createCampaignRef,
+  homeRef,
+}) => {
+  console.log({
+    campaignIdeasRef,
+    metricMeasuresRef,
+    createCampaignRef,
+    homeRef,
+  });
   const dispatch = useDispatch();
   const isSideBar = useSelector((state) => state.isSideBar);
   return (
-    <Layout>
+    <Layout
+      campaignIdeasRef={campaignIdeasRef}
+      metricMeasuresRef={metricMeasuresRef}
+      createCampaignRef={createCampaignRef}
+      homeRef={homeRef}
+    >
       <div>
         <section
           className={`${
             isSideBar ? "-right-full" : "right-0"
           } transition-all duration-[0.5s] ease-in-out relative  bg-hero-bg w-full`}
           id="home"
+          ref={homeRef}
         >
           <div
             className={`absolute cursor-pointer ${
@@ -80,13 +97,13 @@ const Home = () => {
             </Swiper>
           </div>
         </section>
-        <section className="bg-nav">
+        <section className="bg-nav" id="campaignideas" ref={campaignIdeasRef}>
           <ContentWithImage title="CAMPAIGN IDEAS" isCampaignIdeas={true} />
         </section>
-        <section>
+        <section id="metricmeasures" red={metricMeasuresRef}>
           <Slider />
         </section>
-        <section id="createcamapaign">
+        <section id="createcamapaign" ref={createCampaignRef}>
           <div className="bg-[#F3CB3B] pt-10 pb-24">
             <ContentWithImage title="Create Campaign" />
           </div>

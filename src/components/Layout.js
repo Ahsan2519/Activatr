@@ -1,16 +1,26 @@
-import React, { useState } from 'react'
-import Footer from './Footer';
-import Nav from './Nav';
+import React, { useState } from "react";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
-const Layout = ({children}) => {
+const Layout = ({
+  children,
+  campaignIdeasRef,
+  metricMeasuresRef,
+  createCampaignRef,
+  homeRef,
+}) => {
   return (
     <div>
-        <Nav  />
-        {children}
-        <Footer />
-      
+      <Nav
+        campaignIdeasRef={campaignIdeasRef}
+        metricMeasuresRef={metricMeasuresRef}
+        createCampaignRef={createCampaignRef}
+        homeRef={homeRef}
+      />
+      {children}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
