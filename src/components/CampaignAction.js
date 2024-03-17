@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 const CampaignAction = () => {
   const type = useSelector(state => state.type);
   return (
-    <div className="basis-[48%]">
+    <div className="2xl:basis-[48%] xl:basis-[40%]">
       <figure className="pb-14 flex justify-center">
         <img src={PhotoRoom} alt="photo Room" />
       </figure>

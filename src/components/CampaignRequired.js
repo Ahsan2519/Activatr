@@ -113,11 +113,11 @@ const CampaignRequired = () => {
   };
 
   return (
-    <div className="bg-white my-5 mx-8 rounded-2xl basis-[51%]">
+    <div className="bg-white my-5 mx-8 rounded-2xl 2xl:basis-[55%]">
       <h3
         className={`font-bold  tracking-[5.5%] text-center text-[#3D159F]  mt-2 ${
           heading === "Select data fields to be collected"
-            ? "text-[40px] leading-[47px] mb-10 px-52"
+            ? "text-[40px] leading-[47px] mb-10 2xl:px-44"
             : "text-[36px] leading-14"
         }`}
       >
@@ -126,7 +126,7 @@ const CampaignRequired = () => {
       {type === "compaign types" || type === "data field" ? (
         <>
           <ul
-            className={`flex items-center flex-wrap  gap-5 pl-2 py-3 ${
+            className={`flex items-center justify-center lg:justify-normal flex-wrap  gap-5 pl-2 py-3 ${
               heading === "Select data fields to be collected" ? "mb-16" : ""
             }`}
           >

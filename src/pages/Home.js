@@ -101,7 +101,7 @@ const Home = ({
           <div className="bg-[#F3CB3B] pt-10 pb-24">
             <ContentWithImage title="Create Campaign" />
           </div>
-          <div className="bg-[#4700FF] flex justify-between">
+          <div className="bg-[#4700FF] flex justify-between flex-col xl:flex-row ">
             <CampaignAction />
             <CampaignRequired />
           </div>

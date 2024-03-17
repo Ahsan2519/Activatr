@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="pl-24 flex justify-between items-center mb-16">
+    <div className="xl:pl-24 xl:flex-row flex-col flex justify-between items-center mb-16">
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}

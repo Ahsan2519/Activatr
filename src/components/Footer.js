@@ -7,11 +7,11 @@ import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-footer text-white px-10 text-[24px] leading-9 tracking-[1.5%]">
-      <div className="flex justify-between items-start border-b border-white">
+      <div className="flex justify-between flex-col lg:flex-row items-start border-b border-white pb-2">
         <figure>
           <img src={WhiteLogo} alt="Activatr" />
         </figure>
-        <ul className="basis-[30%] flex justify-between gap-4 flex-col pt-8">
+        <ul className="xl:basis-[30%] lg:basis-[45%] pb-3 flex justify-between gap-4 flex-col pt-8">
           <li className="basis-[35%] font-normal">
             <a
               href="mailto:contact@vistaardigital.com"
