@@ -23,12 +23,6 @@ const Home = ({
   createCampaignRef,
   homeRef,
 }) => {
-  console.log({
-    campaignIdeasRef,
-    metricMeasuresRef,
-    createCampaignRef,
-    homeRef,
-  });
   const dispatch = useDispatch();
   const isSideBar = useSelector((state) => state.isSideBar);
   return (

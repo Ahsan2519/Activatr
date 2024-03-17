@@ -49,7 +49,7 @@ const CompaignIdeas = () => {
         <figure>
           <img src={Logo} alt="Activatr" />
         </figure>
-        <h1 className="font-semibold basis-[75%] text-[100px] leading-[143px] tracking-wide text-nav">
+        <h1 className="font-semibold basis-[75%] xl:text-[100px] lg:text-[80px] leading-[143px] tracking-wide text-nav">
           Campaign Ideas
         </h1>
       </div>
@@ -59,13 +59,13 @@ const CompaignIdeas = () => {
             key={value.heading}
             className={`${
               index % 2 !== 0 ? "flex-row-reverse" : ""
-            } flex items-center justify-between mb-28`}
+            } lg:flex items-center justify-between mb-28`}
           >
-            <div className={`basis-[68%] px-5 ${index % 2 == 0 ? "pl-16" : "pl-32"}`}>
+            <div className={`basis-[68%] px-5 ${index % 2 == 0 ? "md:pl-16" : "lg:pl-32 md:pl-16"}`}>
               <h1 className={
-                `text-[#4700FF] text-[64px] leading-[92px] tracking-wide  font-bold mb-5 ${index === 0 ? 'text-center w-[53%]' : 'w-3/4'}`
+                `text-[#4700FF] text-[48px] md:text-[64px]  leading-16 md:leading-[92px] tracking-wide  font-bold mb-5 ${index === 0 ? 'text-center 2xl:w-[53%] lg:w-[78%] w-full' : 'md:w-3/4 w-full'}`
               }>{value.heading}</h1>
-              <p className="pr-52 text-[32px] leading-[46px] font-light">{value.para}</p>
+              <p className="xl:pr-52 lg:pr-20 text-[32px] leading-[46px] mb-10 lg:mb-0 font-light">{value.para}</p>
             </div>
             <figure className="basis-[30%]">
               <img src={value.img} alt={value.heading} />
