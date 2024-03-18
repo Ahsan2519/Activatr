@@ -13,7 +13,7 @@ const CampaignAction = () => {
   return (
     <div className="2xl:basis-[48%] xl:basis-[40%]">
       <figure className="pb-14 flex justify-center">
-        <img src={PhotoRoom} alt="photo Room" />
+        <img src={PhotoRoom} alt=" Room" />
       </figure>
       <div className="font-semibold text-[32px] leading-[46px] text-white pl-14">
         <div className="flex items-center pb-9">

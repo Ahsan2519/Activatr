@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../assest/images/Logo.svg";
 import HeroImage from "../assest/images/HeroImage.png";
 import HeroImageLeft from "../assest/images/HeroImageLeft.png";
@@ -59,7 +59,7 @@ const Home = ({
           </figure>
           <div className="pt-5 flex flex-col lg:flex-row justify-between items-center pb-9 px-14">
             <figure className="basis-[50%]">
-              <img src={HeroImage} />
+              <img src={HeroImage} alt="Hero" />
             </figure>
             <figure className="relative basis-[50%]">
               <img src={HeroImageLeft} alt="hero" />
@@ -94,10 +94,10 @@ const Home = ({
         <section className="bg-nav" id="campaignideas" ref={campaignIdeasRef}>
           <ContentWithImage title="CAMPAIGN IDEAS" isCampaignIdeas={true} />
         </section>
-        <section id="metricmeasures" red={metricMeasuresRef}>
+        <section id="metricmeasures" ref={metricMeasuresRef}>
           <Slider />
         </section>
-        <section id="createcamapaign" ref={createCampaignRef}>
+        <section id="createcamapaign" ref={createCampaignRef} className="h-fit">
           <div className="bg-[#F3CB3B] pt-10 pb-24">
             <ContentWithImage title="Create Campaign" />
           </div>

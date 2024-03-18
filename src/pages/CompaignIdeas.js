@@ -61,7 +61,7 @@ const CompaignIdeas = () => {
               index % 2 !== 0 ? "flex-row-reverse" : ""
             } lg:flex items-center justify-between mb-28`}
           >
-            <div className={`basis-[68%] px-5 ${index % 2 == 0 ? "md:pl-16" : "lg:pl-32 md:pl-16"}`}>
+            <div className={`basis-[68%] px-5 ${index % 2 === 0 ? "md:pl-16" : "lg:pl-32 md:pl-16"}`}>
               <h1 className={
                 `text-[#4700FF] text-[48px] md:text-[64px]  leading-16 md:leading-[92px] tracking-wide  font-bold mb-5 ${index === 0 ? 'text-center 2xl:w-[53%] lg:w-[78%] w-full' : 'md:w-3/4 w-full'}`
               }>{value.heading}</h1>
